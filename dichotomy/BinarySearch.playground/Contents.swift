@@ -1,8 +1,8 @@
 import UIKit
 
-var array = Array(0...100000)
+var array = Array(1...10000)
 
-func dichotomyFindIndex(array: [Int], target: Int) -> Int {
+func binarySearchFindIndex(array: [Int], target: Int) -> Int {
     var startIndex = 0
     var endIndex = array.count - 1
     var times = 0
@@ -30,4 +30,4 @@ func dichotomyFindIndex(array: [Int], target: Int) -> Int {
     return targetIndex
 }
 
-dichotomyFindIndex(array: array, target: 500)
+binarySearchFindIndex(array: array, target: 4999)
